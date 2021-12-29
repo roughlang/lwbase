@@ -25,6 +25,7 @@ app/.phpunit.result.cache
 # lwbase
 app/public/ac/wp-config.php
 app/public/ac/wp-content/uploads/*
+app/public/ac/wp-content/plugins/*
 app/public/pma/tmp/*
 
 # mac
