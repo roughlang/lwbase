@@ -23,7 +23,6 @@ app/.vagrant
 app/.phpunit.result.cache
 
 # lwbase
-app/public/.htpasswd
 app/public/ac/wp-config.php
 app/public/ac/wp-content/uploads/*
 app/public/pma/tmp/*
