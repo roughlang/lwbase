@@ -6,7 +6,12 @@ Git clone
 $ git clone https://github.com/roughlang/lwbase.git lwbase
 ```
 
-## docker for lwbase
+- Laravel8
+    - db session
+    - ui / auth
+    -
+
+## Docker for lwbase
 
 Change to the app directory.
 ```
@@ -92,3 +97,13 @@ password: password
 http://localhost:7350/ac/wp-admin
 
 ## Wordpress install (Command manually)
+
+You can also install it manually using subdata (unofficial). You manually create wp-config.php and restore the mysql database data.
+
+```
+$ docker cp ../subdata/lwbase_app.sql app_mysql_1:/tmp/lwbase_app.sql
+$ docker exec -it app_mysql_1 /bin/bash
+bash-4.4# ls /tmp
+lwbase_app.sql
+mysql -u root lwbase_app < /tmp/lwbase_app.sql
+```
