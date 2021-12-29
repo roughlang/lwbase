@@ -107,3 +107,10 @@ bash-4.4# ls /tmp
 lwbase_app.sql
 mysql -u root lwbase_app < /tmp/lwbase_app.sql
 ```
+
+## Front
+
+```
+$ ./vendor/bin/sail npm install
+$ ./vendor/bin/sail npm run dev
+```
