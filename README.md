@@ -74,7 +74,7 @@ $ ./vendor/bin/sail artisan migrate
 ````
 success.
 
-## Wordpress install
+## Wordpress install (GUI auto)
 
 We usually do the initial setup in the Wordpress GUI.
 Information for database to connect
@@ -84,9 +84,11 @@ user: root
 password: (empty)
 host: mysql
 ```
-
-http://localhost:7350/ac/wp-admin
+Wordpress user for example.
 ```
 user: user
 password: password
 ```
+http://localhost:7350/ac/wp-admin
+
+## Wordpress install (Command manually)
