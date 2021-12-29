@@ -1,11 +1,16 @@
 # lwbase
 
 The lwbase is laravel8 + wordpess(newest) web application.
+Git clone
+```
+$ git clone https://github.com/roughlang/lwbase.git lwbase
+```
 
 ## docker for lwbase
 
 Change to the app directory.
 ```
+$ cd lwbase
 $ cd app
 ```
 
@@ -35,20 +40,24 @@ set `.env`
 ```
 $ cp -p .env.example .env
 ```
-
+exec docker
 ```
-$ docker-compose up -d
+$ ./vendor/bin/sail up -d
+$ docker-compose down && docker-compose up -d
+$ docker-compose ps
 ```
 access: http://localhost:7350
+
+
+## Create databse and connect
+
+access: http://localhost:7350/pma/index.php  
+
+and create database `lwbase_app`
 ```
 user: root  
 password: (empty)
 ```
-
-## create databse and connect
-
-access: http://localhost:7350/pma/index.php
-and create database "lwbase_app"
 
 or login to docker container and exec to create database
 ```
