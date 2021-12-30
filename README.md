@@ -9,7 +9,8 @@ $ git clone https://github.com/roughlang/lwbase.git lwbase
 - Laravel8
     - db session
     - ui / auth
-    -
+    - Bootstrap5
+    - 
 
 ## Docker for lwbase
 
@@ -51,12 +52,12 @@ $ ./vendor/bin/sail up -d
 $ docker-compose down && docker-compose up -d
 $ docker-compose ps
 ```
-access: http://localhost:7350
+access: http://localhost:8000
 
 
 ## Create databse and connect
 
-access: http://localhost:7350/pma/index.php  
+access: http://localhost:8000/pma/index.php  
 
 and create database `lwbase_app`
 ```
@@ -94,7 +95,7 @@ Wordpress user for example.
 user: user
 password: password
 ```
-http://localhost:7350/ac/wp-admin
+http://localhost:8000/ac/wp-admin
 
 ## Wordpress install (Command manually)
 

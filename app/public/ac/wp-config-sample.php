@@ -25,8 +25,8 @@
 // を使用し、必ず UTF-8 の BOM なし (UTF-8N) で保存してください。
 
 
-define( 'WP_HOME', 'http://localhost:7350/ac' );
-define( 'WP_SITEURL', 'http://localhost:7350/ac' );
+define( 'WP_HOME', 'http://localhost:8000/ac' );
+define( 'WP_SITEURL', 'http://localhost:8000/ac' );
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
