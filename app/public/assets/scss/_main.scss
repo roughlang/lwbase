@@ -1,4 +1,5 @@
 @import "_bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
 
 /* boot strap5
 @media (max-width: 575px) {width: 90%;}
@@ -15,300 +16,67 @@ md ≥768px
 lg ≥992px
 xl ≥1200px
 */
+
 @mixin set-serif {
   font-family: Georgia, serif !important;
 	letter-spacing: 0.7px;
-	color: #555;
+	color: #333;
 }
 @mixin set-sans-serif {
-  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, メイリオ, Meiryo, sans-serif !important;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, メイリオ, Meiryo, sans-serif !important;
 	letter-spacing: 0.7px;
-	color: #555;
+	font-weight:400;
+	color: #333;
 }
 
 body {
-  font-family: Georgia, serif !important;
-	letter-spacing: 0.7px;
-	font-size: 14px;
-	color: #555;
-
-	a:link, a:visited {
-		color: #4682b4;
-		text-decoration: none;
-	}
-	a:hover, a:active {
-		color: #2474b5;
-		text-decoration: underline;
-	}
-
-	.topbar {
-		height: 10px;
-		color: #888;
-		@media (max-width: 575px) { background-color: #000; }
-		@media (min-width: 576px) and (max-width: 768px) { background-color: #aaa; }
-		@media (min-width: 769px) and (max-width: 992px) { background-color: #ccc; }
-		@media (min-width: 993px) and (max-width: 1200px) { background-color: #333; }
-		@media (min-width: 1201px) { background-color: #888; }
-	}
+	@include set-sans-serif();
 	.navbar {
-		ul.nav208 {
-			li.nav-item {
-				a:visited, a:link { color: #555; }
-				a:active, a:hover { text-decoration: none; }
-				@media (max-width: 575px) {
-					font-size: 20px;
-				}
+		form {
+			input {
+				border-radius: 3px 0 0 3px;
 			}
-		}
-		.search-form {
-			@media (max-width: 575px) { margin-bottom:15px; }
-			.search-input {
-				border: 1px solid #6c757d;
-				border-radius: 5px 0 0 5px;
-			}
-			.search-btn {
-				background-image:  url(/assets/img/item/search-icon.png);
-				background-size: 60%;
-				background-repeat: no-repeat;
-				width: 40px;
-				background-position: center;
+			.btn {
+				border: 1px solid #ced4da;
 				margin-left: -9px;
-				border-radius: 0 5px 5px 0px;
+				border-radius: 0 3px 3px 0;
+				border-left: 0;
 			}
-			.search-btn:hover {
-				color: #fff;
-				background-color: #fff;
-				border-color: #6c757d;
-			}
-		}
-		a.navbar-brand {
-			font-size: 18px;
-			margin-bottom: -2px;
-			img.navbar-brand-img {
-				width: 28px;
-			}
-		}
-		a.navbar-brand:link, a.navbar-brand:visited {
-			text-decoration: none;
-		}
-		a.navbar-brand:hover, a.navbar-brand:active {
-			text-decoration: none;
 		}
 	}
-
-	/* top banner  */
-	.big-banner-top {
-		h1 {
-			color: #000;
-		}
-		p.lead {
-			color: #fff;
-			text-align: center;
-			font-size: 18px;
-			background:rgba(0, 0, 0, 0.4);
-			padding: 9px;
-    	border-radius: 30px;
-      .lead-br {
-        @media (max-width: 575px) { display: block; }
-        @media (min-width: 576px) and (max-width: 1200px) { display: none; }
-        @media (min-width: 1201px) { display: none; }
-      }
-		}
-		p.sub-lead {
-			color: #fff;
-			text-align: center;
-			font-size: 18px;
-			background:rgba(0, 0, 0, 0.5);
-			padding: 9px;
-    	border-radius: 30px;
-		}
-		.reservation-btn {
-			color: #fff;
-			text-decoration: none;
-			letter-spacing: 2px;
-		}
-		/*xs*/
+	.big-banner {
+		background-size: cover;
 		@media (max-width: 575px) {
-			background-size:cover !important;
-			height: 560px;
-			background-position: center !important;
-			background: no-repeat url("/assets/img/top/top-banner_xs.png") #000;
+			background-image: url("/assets/img/top/bg-575.png");
+			height: 575px;
+			background-position: center 50%;
 		}
-		/*sm*/
 		@media (min-width: 576px) and (max-width: 768px) {
-			background-size:cover !important;
-			height: 560px;
-			background-position: center !important;
-			background: url("/assets/img/top/top-banner_sm.png") #000;
+			background-image: url("/assets/img/top/bg-768.png");
+			height: 680px;
+			background-position: center 50%;
 		}
-		/*md*/
 		@media (min-width: 769px) and (max-width: 992px) {
-			background-size:cover !important;
-			height: 560px;
-			background-position: center !important;
-			background: url("/assets/img/top/top-banner_md.png") #000;
+			background-image: url("/assets/img/top/bg-992.png");
+			height: 680px;
+			background-position: center 50%;
 		}
-		/*lg*/
 		@media (min-width: 993px) and (max-width: 1200px) {
-			background-size:cover !important;
-			height: 560px;
-			background-position: center !important;
-			background: url("/assets/img/top/top-banner_lg.png") #000;
+			background-image: url("/assets/img/top/bg-1200.png");
+			height: 680px;
+			background-position: center 50%;
 		}
-		/*xs*/
 		@media (min-width: 1201px) {
-			background-size:cover !important;
-			height: 560px;
-			background-position: center !important;
-			background: url("/assets/img/top/top-banner_xl.png") #000;
-		}
-	}
-	.top-block-01 {
-		margin-top: 50px;
-		@include set-sans-serif;
-		.jagua_tattoo_img {
-			h2.what, h2.h2-208  {
-				margin-bottom: 32px;
-				font-family: Georgia, serif !important;
-				@media (max-width: 768px) {
-					font-size: 19px;
-					text-align: center;
-				}
-			}
-		}
-		.navbar-brand-text {
-
-		}
-		ul.jagua_tattoo_ul {
-			@media (max-width: 768px) { margin-top: 0; }
-			@media (min-width: 769px) and (max-width: 992px) {margin-top: 100px;}
-			@media (min-width: 993px) and (max-width: 1200px) {margin-top: 100px;}
-			@media (min-width: 1201px) {margin-top: 120px;}
-		}
-		.top_jagua_tattoo {
-			// width: 70%;
-			@media (max-width: 768px) {width: 70%;}
-			@media (min-width: 769px) and (max-width: 992px) {width: 80%;}
-			@media (min-width: 993px) and (max-width: 1200px) {width: 70%;}
-			@media (min-width: 1201px) {width: 60%;}
-			border-radius: 50%;
-		}
-		ul {
-			li {
-				line-height: 30px;
-			}
-		}
-	}
-
-	.top-block-02 {
-		@include set-sans-serif;
-		.price1 {
-			h2 {
-				@include set-serif;
-				@media (max-width: 768px) {
-					font-size: 19px;
-					text-align: center;
-					margin-top: 30px;
-				}
-			}
-			p {
-				@media (max-width: 768px) {
-					text-align: center;
-				}
-			}
-			.price-table {
-				@media (max-width: 992px) {
-					margin-right: auto;
-					margin-left: auto;
-				}
-			}
-			p.price-attention {
-				text-align: left;
-			}
-		}
-		.price2 {
-			// background: #f00;
-			.price-img {
-				position: relative;
-				padding: 0;
-				.img-num {
-					position: absolute;
-					top: 5px;
-					left: 5px;
-					font-size: 20px;
-				}
-				.price-image {
-					width: 100%;
-				}
-			}
-			.price-center-block {
-				border: 2px #333 solid;
-				letter-spacing: 0.7px;
-				color: #fff !important;
-				background: #333;
-				padding: 15px;
-				font-size: 120%;
-				text-align: center;
-				@include set-serif;
-			}
-		}
-	}
-	.top-attention {
-		line-height: 30px;
-		.right-block {
-			@media (max-width: 992px) { margin-top: 0; }
-			@media (min-width: 993px) and (max-width: 1200px) {margin-top: 60px;}
-			@media (min-width: 1201px) {margin-top: 60px;}
-		}
-		p {
-			margin-left: 13px;
-			@include set-sans-serif;
-		}
-	}
-	// .top-block-blog {
-	// 	@include set-sans-serif;
-	// }
-
-	/* page */
-	.page {
-		.page-contents {
-			.page-title {
-				@include set-serif;
-				font-size: 28px;
-			}
-			.page-text {
-				@include set-sans-serif;
-				line-height: 23px;
-			}
-		}
-		.sidebar {
-			.sidebar-title {
-				@include set-serif;
-			}
-			@include set-serif;
-		}
-	}
-
-	footer {
-		padding: 20px;
-		border-top: 1px solid #c1c1c1;
-		h4 {
-			font-weight: normal;
-			font-size: 15px;
-		}
-		ul {
-			margin-left: -32px;
-			li {
-				list-style: none;
-			}
-		}
-		.copy-right {
-			margin-top: 50px;
-			text-align: center;
+			background-image: url("/assets/img/top/bg-1680.png");
+			height: 680px;
+			background-position: center 60%;
 		}
 	}
 }
 
+.hr {
+	border-top: 1px solid #c1c1c1;
+}
 table {
 	border-top: 1px solid #c1c1c1;
 	border-left: 1px solid #c1c1c1;

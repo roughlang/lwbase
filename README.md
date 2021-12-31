@@ -115,3 +115,8 @@ mysql -u root lwbase_app < /tmp/lwbase_app.sql
 $ ./vendor/bin/sail npm install
 $ ./vendor/bin/sail npm run dev
 ```
+
+## Reference
+
+- [Font Awesome](https://fontawesome.com/)
+- [Bootstrap5](https://getbootstrap.jp/)
