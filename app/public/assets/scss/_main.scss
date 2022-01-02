@@ -39,6 +39,17 @@ body {
 		color: #4682b4;
 		font-weight: bold;
 	}
+	.topbar {
+		height: 5px;
+		width: 100%;
+		background: #333;
+		font-size:5px;
+		@media (max-width: 575px) { background: #333; }
+		@media (min-width: 576px) and (max-width: 768px) { background: #696969; }
+		@media (min-width: 769px) and (max-width: 992px) { background: #a9a9a9; }
+		@media (min-width: 993px) and (max-width: 1200px) { background: #c0c0c0; }
+		@media (min-width: 1201px) { background: #dcdcdc; }	
+	}
 	.navbar {
 		form {
 			input {
