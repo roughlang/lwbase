@@ -13,8 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () { return view('welcome'); });
-Route::get('/phpinfo', function () { return view('phpinfo'); });
+Route::get('/', function () { return view('index'); });
+
+/* utility */
+if (env('APP_ENV') == 'local' || env('APP_ENV') == 'develop') {
+  Route::get('/phpinfo', function () { return view('phpinfo'); });
+}
+
 
 Auth::routes();
 

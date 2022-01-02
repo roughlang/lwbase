@@ -10,7 +10,7 @@ $ git clone https://github.com/roughlang/lwbase.git lwbase
     - db session
     - ui / auth
     - Bootstrap5
-    - 
+    - [ikonate](https://ikonate.com/)
 
 ## Docker for lwbase
 
@@ -48,6 +48,7 @@ $ cp -p .env.example .env
 ```
 exec docker
 ```
+$ ./vendor/bin/sail build --no-cache  
 $ ./vendor/bin/sail up -d
 $ docker-compose down && docker-compose up -d
 $ docker-compose ps
@@ -108,6 +109,26 @@ bash-4.4# ls /tmp
 lwbase_app.sql
 mysql -u root lwbase_app < /tmp/lwbase_app.sql
 ```
+
+### Wordpress plugins
+
+- Classic Editor
+- Classic Widgets
+```
+```
+
+## Utility
+
+Laravel version
+```
+$ ./vendor/bin/sail artisan --version
+```
+php version
+```
+$ ./vendor/bin/sail php --version
+```
+or http://localhost:8000/phpinfo
+
 
 ## Front
 

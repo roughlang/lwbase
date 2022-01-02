@@ -31,6 +31,14 @@ xl ≥1200px
 
 body {
 	@include set-sans-serif();
+	a:link, a:visited {
+		color: #4682b4;
+		text-decoration: none;
+	}
+	a:hover, a:active {
+		color: #4682b4;
+		font-weight: bold;
+	}
 	.navbar {
 		form {
 			input {
