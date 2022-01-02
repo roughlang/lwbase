@@ -12,7 +12,7 @@
 @endsection
 
 @section('content_block')
-<div class="container lw-contents-block">
+<div class="container lw-contents-block mb60">
   <div class="row">
     <div class="col-sm-6">
       <h2>Document</h2>
