@@ -9,6 +9,13 @@
 	<title>@yield('title') | {{ env('APP_NAME') }}</title>
 	<link rel="stylesheet" href="/assets/css/_main.css" media="screen">
 	<script type="text/javascript" src="/assets/bootstrap5/js/bootstrap.min.js"></script>
+	@if(env('APP_ENV') == 'local' || env('APP_ENV') == 'develop')
+	<script type="text/javascript" src="/assets/js/vue/vue.js"></script>
+	<script type="text/javascript" src="/assets/js/vue/axios.js"></script>
+	@else
+	<script type="text/javascript" src="/assets/js/vue/vue.min.js"></script>
+	<script type="text/javascript" src="/assets/js/vue/axios.min.js"></script>
+	@endif
 </head>
 <body>
 <div class="topbar"></div>
