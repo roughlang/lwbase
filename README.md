@@ -2,10 +2,11 @@
 
 ## Introduction
 
+The lwbase is laravel8 + wordpess(newest) web application.
+
 Web: http://lwbase.roughlang.com/
 Github: https://github.com/roughlang/lwbase
 
-The lwbase is laravel8 + wordpess(newest) web application.
 Git clone
 ```
 $ git clone https://github.com/roughlang/lwbase.git lwbase
