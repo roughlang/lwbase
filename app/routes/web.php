@@ -20,6 +20,13 @@ if (env('APP_ENV') == 'local' || env('APP_ENV') == 'develop') {
   Route::get('/phpinfo', function () { return view('phpinfo'); });
 }
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+/**
+ * test
+ */
+Route::get('/test/vueajax', [App\Http\Controllers\VueajaxController::class, 'index'])->name('vueajax');
+
 
 Auth::routes();
 

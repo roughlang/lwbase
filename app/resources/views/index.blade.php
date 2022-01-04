@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', '利用規約')
+@section('title', 'lwbase top page')
 
 @section('top_banner')
 <div class="big-banner p-3 p-sm-5 mb-4 bg-img">
@@ -35,7 +35,6 @@
           }
         })
       </script>
-
 
       <div id="list">
         <ul v-for="(row,index) in tests" :key="row.title">
