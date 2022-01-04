@@ -14,6 +14,7 @@
           <li v-for="page in blog">@{{ page.title }}</li>
         </ol>
       </div>
+      {{ env('APP_URL') }}
       <script>
         const vueajax1 = new Vue({
           el: '#vueajax1',
@@ -23,7 +24,7 @@
           mounted: function() {
             const self = this;
             axios
-            .get('http://localhost:8000/ac/')
+            .get( '{{ env('APP_URL') }}/ac/')
             .then(function(response) {
               console.log(response);
                 self.blog = response.data;
