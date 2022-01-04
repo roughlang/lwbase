@@ -37,6 +37,7 @@ DB_DATABASE=lwbase_db
 DB_USERNAME=user
 DB_PASSWORD=password
 ```
+設定後に`artisan migrate`を実行します。
 
 
 ## Error
