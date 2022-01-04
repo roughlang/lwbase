@@ -10,8 +10,38 @@
       <h3>Ajax(axios) GET sample</h3>
       <p>axiosのgetメソッドでAPIのjsonを読み込んでリスト表示します。</p>
       <div id="vueajax1">
+        {{-- 
+          [{
+          "id":1,
+          "title":"Hello world!",
+          "content":"<p>WordPress へようこそ。こちらは最初の投稿です。編集または削除し、コンテンツ作成を始めてください。</p>",
+          "permalink":"https://lwbase.roughlang.com/ac/2022/01/05/hello-world/",
+          "publish_date":"2022-01-05 01:39:40",
+          "modified_date":"2022-01-05 01:39:40",
+          "category":[{"term_id":1,
+          "name":"未分類",
+          "slug":"uncategorized",
+          "term_group":0,
+          "term_taxonomy_id":1,
+          "taxonomy":"category",
+          "description":"",
+          "parent":0,
+          "count":1,
+          "filter":"raw",
+          "cat_ID":1,
+          "category_count":1,
+          "category_description":"",
+          "cat_name":"未分類",
+          "category_nicename":"uncategorized",
+          "category_parent":0}],
+          "tag":false,
+          "icatch":false,
+          "post_images":[],
+          "slug":"hello-world"
+          }]
+        --}}
         <ol>
-          <li v-for="page in blog">@{{ page.title }}</li>
+          <li v-for="page in blog"><a href="@{{ page.permalink }}">@{{ page.title }}</a></li>
         </ol>
       </div>
       {{ env('APP_URL') }}

@@ -27,6 +27,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
  */
 Route::get('/test/vueajax', [App\Http\Controllers\VueajaxController::class, 'index'])->name('vueajax');
 
+/**
+ * vue
+ */
+Route::get('/vue', function () { return view('vue/index'); });
+Route::get('/vue/ajax_get', function () { return view('vue/ajax_get'); });
 
 Auth::routes();
 
