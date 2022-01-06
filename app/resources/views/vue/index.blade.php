@@ -8,10 +8,16 @@
     <div class="col-md-9">
       <h2 class="mb20">Document</h2>
       <ul>
-        <li><a href="{{ env('APP_URL') }}/vue" target="_blank">http://localhost:8000/vue</a></li>
+        <li><a href="{{ env('APP_URL') }}/vue" target="_blank">{{ env('APP_URL') }}/vue</a></li>
         <li><a href="{{ env('APP_URL') }}/vue/ajax_get" target="_blank">{{ env('APP_URL') }}/vue/ajax_get</a></li>
-      </ul>  
+      </ul>
+      <h2 class="mb20">Document</h2>
+      <ul>  
+        <li><a href="{{ env('APP_URL') }}/ac/wp-json/wp/v2/posts" target="_blank">{{ env('APP_URL') }}/ac/wp-json/wp/v2/posts</a></li>
+        <li><a href="https://lwbase.roughlang.com/ac/wp-json/wp/v2/posts" target="_blank">https://lwbase.roughlang.com/ac/wp-json/wp/v2/posts</a></li>
+      </ul> 
     </div>
+
     <div class="col-md-3">
       <h1>Hello!!</h1>
       <div id="app">@{{ message }}</div>
