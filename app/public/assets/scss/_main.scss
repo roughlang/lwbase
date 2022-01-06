@@ -94,6 +94,34 @@ body {
 			background-position: center 60%;
 		}
 	}
+	/* BLog */
+	.blog-contents-block {
+		
+		.blog-search-form {
+			// background: #0ff;
+			form {
+				// background: #f00;
+				input {
+					// border: 3px solid #000;
+					border-radius: 3px 0 0 3px;
+				}
+				.btn {
+					border: 1px solid #ced4da;
+					margin-left: -9px;
+					border-radius: 0 3px 3px 0;
+					border-left: 0;
+				}
+			}
+		}
+		.blog {
+			li {
+				// background: #f0f;
+				font-size: 1rem;
+				list-style: none;
+				margin-left: -20px;
+			}
+		}
+	}
 }
 
 .hr {
