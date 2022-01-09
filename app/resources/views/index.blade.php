@@ -22,8 +22,6 @@
       </ul>  
     </div>
     <div class="col-sm-6">
-      
-      
       <h1>Hello!!</h1>
       <div id="app">@{{ message }}</div>
       <script type="text/javascript" src="/assets/js/vue/vue.js"></script>
@@ -56,6 +54,25 @@
           }
         })
       </script>
+    </div>
+  </div>
+</div>
+
+<div class="container lw-contents-block mb60">
+  <div class="row">
+    <div class="col-sm-6">
+      <p>ある朝、グレゴール・ザムザが気がかりな夢から目ざめたとき、自分がベッドの上で一匹の巨大な毒虫に変ってしまっているのに気づいた。彼は甲殻のように固い背中を下にして横たわり、頭を少し上げると、何本もの弓形のすじにわかれてこんもりと盛り上がっている自分の茶色の腹が見えた。腹の盛り上がりの上には、かけぶとんがすっかりずり落ちそうになって、まだやっともちこたえていた。ふだんの大きさに比べると情けないくらいかぼそいたくさんの足が自分の眼の前にしょんぼりと光っていた。</p>
+      <p style="font-weight: 100;">ある朝、グレゴール・ザムザが気がかりな夢から目ざめたとき、自分がベッドの上で一匹の巨大な毒虫に変ってしまっているのに気づいた。彼は甲殻のように固い背中を下にして横たわり、頭を少し上げると、何本もの弓形のすじにわかれてこんもりと盛り上がっている自分の茶色の腹が見えた。腹の盛り上がりの上には、かけぶとんがすっかりずり落ちそうになって、まだやっともちこたえていた。ふだんの大きさに比べると情けないくらいかぼそいたくさんの足が自分の眼の前にしょんぼりと光っていた。</p>
+      <p style="font-weight: 200;">ある朝、グレゴール・ザムザが気がかりな夢から目ざめたとき、自分がベッドの上で一匹の巨大な毒虫に変ってしまっているのに気づいた。彼は甲殻のように固い背中を下にして横たわり、頭を少し上げると、何本もの弓形のすじにわかれてこんもりと盛り上がっている自分の茶色の腹が見えた。腹の盛り上がりの上には、かけぶとんがすっかりずり落ちそうになって、まだやっともちこたえていた。ふだんの大きさに比べると情けないくらいかぼそいたくさんの足が自分の眼の前にしょんぼりと光っていた。</p>
+      <p style="font-weight: 300;">ある朝、グレゴール・ザムザが気がかりな夢から目ざめたとき、自分がベッドの上で一匹の巨大な毒虫に変ってしまっているのに気づいた。彼は甲殻のように固い背中を下にして横たわり、頭を少し上げると、何本もの弓形のすじにわかれてこんもりと盛り上がっている自分の茶色の腹が見えた。腹の盛り上がりの上には、かけぶとんがすっかりずり落ちそうになって、まだやっともちこたえていた。ふだんの大きさに比べると情けないくらいかぼそいたくさんの足が自分の眼の前にしょんぼりと光っていた。</p>
+      <p style="font-weight: 400;">ある朝、グレゴール・ザムザが気がかりな夢から目ざめたとき、自分がベッドの上で一匹の巨大な毒虫に変ってしまっているのに気づいた。彼は甲殻のように固い背中を下にして横たわり、頭を少し上げると、何本もの弓形のすじにわかれてこんもりと盛り上がっている自分の茶色の腹が見えた。腹の盛り上がりの上には、かけぶとんがすっかりずり落ちそうになって、まだやっともちこたえていた。ふだんの大きさに比べると情けないくらいかぼそいたくさんの足が自分の眼の前にしょんぼりと光っていた。</p>
+    </div>
+    <div class="col-sm-6">
+      <p>Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheuren Ungeziefer verwandelt. Er lag auf sinem panzerartig harten Rücken und sah, wenn er den Kopf eine wenig hob, seinen gewölbten, braunen, von bogenförmigen Versteifungen geteilten Bauch, auf dessen Höhe sich die Bettdecke, zum gänzlichen Niedergleiten bereit, kaum noch erhalten konnte. Seine vielen, im Vergleich zu seinem sonstigen Umfang kläglich dünnnen Beine flimmerten ihm hilflos vor den Augen.</p>
+      <p style="font-weight: 100;">Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheuren Ungeziefer verwandelt. Er lag auf sinem panzerartig harten Rücken und sah, wenn er den Kopf eine wenig hob, seinen gewölbten, braunen, von bogenförmigen Versteifungen geteilten Bauch, auf dessen Höhe sich die Bettdecke, zum gänzlichen Niedergleiten bereit, kaum noch erhalten konnte. Seine vielen, im Vergleich zu seinem sonstigen Umfang kläglich dünnnen Beine flimmerten ihm hilflos vor den Augen.</p>
+      <p style="font-weight: 200;">Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheuren Ungeziefer verwandelt. Er lag auf sinem panzerartig harten Rücken und sah, wenn er den Kopf eine wenig hob, seinen gewölbten, braunen, von bogenförmigen Versteifungen geteilten Bauch, auf dessen Höhe sich die Bettdecke, zum gänzlichen Niedergleiten bereit, kaum noch erhalten konnte. Seine vielen, im Vergleich zu seinem sonstigen Umfang kläglich dünnnen Beine flimmerten ihm hilflos vor den Augen.</p>
+      <p style="font-weight: 300;">Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheuren Ungeziefer verwandelt. Er lag auf sinem panzerartig harten Rücken und sah, wenn er den Kopf eine wenig hob, seinen gewölbten, braunen, von bogenförmigen Versteifungen geteilten Bauch, auf dessen Höhe sich die Bettdecke, zum gänzlichen Niedergleiten bereit, kaum noch erhalten konnte. Seine vielen, im Vergleich zu seinem sonstigen Umfang kläglich dünnnen Beine flimmerten ihm hilflos vor den Augen.</p>
+      <p style="font-weight: 400;">Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheuren Ungeziefer verwandelt. Er lag auf sinem panzerartig harten Rücken und sah, wenn er den Kopf eine wenig hob, seinen gewölbten, braunen, von bogenförmigen Versteifungen geteilten Bauch, auf dessen Höhe sich die Bettdecke, zum gänzlichen Niedergleiten bereit, kaum noch erhalten konnte. Seine vielen, im Vergleich zu seinem sonstigen Umfang kläglich dünnnen Beine flimmerten ihm hilflos vor den Augen.</p>
     </div>
   </div>
 </div>
