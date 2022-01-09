@@ -135,6 +135,9 @@ body {
 					// border: 3px solid #000;
 					border-radius: 3px 0 0 3px;
 				}
+				input::placeholder {
+					color: #dcdcdc;
+				}
 				.btn {
 					border: 1px solid #ced4da;
 					margin-left: -9px;
