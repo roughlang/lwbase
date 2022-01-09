@@ -29,7 +29,15 @@ xl ≥1200px
 	color: #333;
 }
 
+@keyframes fade{
+  0%{ opacity: 0;}
+  100%{ opacity: 1;}
+}
 body {
+	/* 読み込み時のfade */
+	animation-name: fade;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 	@include set-sans-serif();
 	a:link, a:visited {
 		color: #4682b4;
@@ -92,6 +100,18 @@ body {
 			background-image: url("/assets/img/top/bg-1680.png");
 			height: 680px;
 			background-position: center 60%;
+		}
+	}
+	/* Login */
+	.login-contents-block {
+		.login {
+			.login-form {
+				margin: 0 auto;
+				@media (max-width: 575px) { width: 100%; }
+				@media (min-width: 576px) { width: 400px; }
+				
+			}
+			
 		}
 	}
 	/* BLog */

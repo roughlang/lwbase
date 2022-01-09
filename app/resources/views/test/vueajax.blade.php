@@ -60,7 +60,7 @@
                 self.blog = response.data;
             })
             .catch(function(error) {
-                console.log('取得に失敗しました。', error);
+              console.log('取得に失敗しました。', error);
             })
           }
         });

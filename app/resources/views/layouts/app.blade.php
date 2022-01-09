@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="canonical" href="{{ env('APP_URL') }}">
+  <link rel="canonical" href="{{ url()->current() }}">
 	@include('include/favicon')
 	<title>@yield('title') | {{ env('APP_NAME') }}</title>
 	<link rel="stylesheet" href="/assets/css/_main.css" media="screen">

@@ -31,7 +31,7 @@ category / tagのソートと検索
         </form>
       </div>
 
-      <h3>Latest<h3>
+      <h3 class="mt30">Latest<h3>
       <div class="blog-latest-blocck">
         <ul id="blog" class="blog">
           <li v-for="page in blog">
@@ -40,7 +40,9 @@ category / tagのソートと検索
               @{{ page.excerpt.rendered }}
             </div>
             <div class="meta">
-              <div class="categories">@{{ page.categories }}</div>
+              <div class="categories">
+                @{{ page.category_name }}
+              </div>
               <div class="tags">
                 <ul v-for="tags in page.tags">
                   <li >@{{ tags }}</li>
