@@ -28,6 +28,7 @@ app/public/ac/wp-content/uploads/*
 app/public/ac/wp-content/plugins/*
 app/public/pma/tmp/*
 logs/*
+app/public/ac/wp-content/debug.log
 
 # mac
 .DS_Store
