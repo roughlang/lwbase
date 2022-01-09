@@ -45,3 +45,12 @@ if ( ! function_exists( 'register_rest_category_name' )) {
     return $category[0]->cat_name;
   }
 }
+
+/**
+ * 
+ */
+function get_tag_name( $object ) {
+  $tags = get_the_tags($object[ 'id' ]);
+  var_dump($tags);
+  return $tags;
+}

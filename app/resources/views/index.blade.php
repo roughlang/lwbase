@@ -19,6 +19,7 @@
       <ul>
         <li><a href="https://github.com/roughlang/lwbase" target="_blank">https://github.com/roughlang/lwbase</a></li>
         <li><a href="http://localhost:8000/ac/?feed=rss2" target="_blank">http://localhost:8000/ac/?feed=rss2</a></li>
+        <li><a href="https://lwbase.roughlang.com/ac/wp-json/wp/v2/posts" target="_blank">https://lwbase.roughlang.com/ac/wp-json/wp/v2/posts</a></li>
       </ul>  
     </div>
     <div class="col-sm-6">

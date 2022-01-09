@@ -34,47 +34,48 @@ category / tagのソートと検索
       <h3 class="mt30">Latest<h3>
       <div class="blog-latest-blocck">
         <ul id="blog" class="blog">
+
           <li v-for="page in blog">
-            <h4><a href="#" class="blog-title-link">@{{ page.title.rendered }}</a></h4>
+            <h4><a v-bind:href="'#' + page.id" class="blog-title-link">@{{ page.title.rendered }}</a></h4>
             <div class="excerpt" v-html="page.excerpt.rendered">
               @{{ page.excerpt.rendered }}
             </div>
             <div class="meta">
               <div class="categories">
-                @{{ page.category_name }}
+                <ul v-for="category in page.category_info">
+                  <li><a v-bind:href="'#' + category.cat_ID">@{{ category.cat_name }}</a></li>
+                </ul>   
               </div>
               <div class="tags">
-                <ul v-for="tags in page.tags">
-                  <li >@{{ tags }}</li>
+                <ul v-for="tag in page.tag_info">
+                  <li ><a v-bind:href="'#' + tag.term_id">@{{ tag.name }}</a></li>
                 </ul>
               </div>
               <div class="date">@{{ page.date }}</div>
             </div>
-            
           </li>
+
         </ul>
       </div>
       <script>
-        /* Blogの表示 */
-        console.log(get_blog_categories_text());
-        const blog = new Vue({
-          el: '#blog',
-          data: { blog: [] },
-          mounted: function() {
-            const self = this;
-            axios
-            .get( 'https://lwbase.roughlang.com/ac/wp-json/wp/v2/posts')
-            .then(function(response) {
-              console.log(response);
-              self.blog = response.data;
-            }).catch(function(){
-              console.log('取得に失敗しました。', error);
-            })
-          }
-        });
-        function get_blog_categories_text() {
-          return "foobar";
+      /* Blogの表示 */
+      const blog = new Vue({
+        el: '#blog',
+        data: {
+          blog: []
+        },
+        mounted: function() {
+          const self = this;
+          /* posts */
+          axios.get( 'https://lwbase.roughlang.com/ac/wp-json/wp/v2/posts')
+          .then(function(response) {
+            // console.log(response.data);
+            self.blog = response.data;
+          }).catch(function(){
+            console.log('Failed to get blog from wp-rest-api.', error);
+          });
         }
+      });
       </script>
 
 
