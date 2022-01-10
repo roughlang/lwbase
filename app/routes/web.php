@@ -19,6 +19,7 @@ Route::get('/', function () { return view('index'); });
  * blog
  */
 Route::get('/blog', function () { return view('blog/index'); });
+Route::get('/blog/post/{id}', function ($id) { return view('blog/post',['id'=>$id]); });
 Route::get('/blog/archives', function () { return view('blog/archives'); });
 Route::get('/blog/gallery', function () { return view('blog/gallery'); });
 

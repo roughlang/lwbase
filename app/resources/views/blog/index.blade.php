@@ -36,7 +36,7 @@ category / tagのソートと検索
         <ul id="blog" class="blog">
 
           <li v-for="page in blog">
-            <h4><a v-bind:href="'#' + page.id" class="blog-title-link">@{{ page.title.rendered }}</a></h4>
+            <h4><a v-bind:href="'/blog/post/' + page.id" class="blog-title-link">@{{ page.title.rendered }}</a></h4>
             <div class="excerpt" v-html="page.excerpt.rendered">
               @{{ page.excerpt.rendered }}
             </div>
@@ -56,6 +56,20 @@ category / tagのソートと検索
           </li>
 
         </ul>
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center pagination-sm">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <script>
       /* Blogの表示 */
@@ -67,7 +81,7 @@ category / tagのソートと検索
         mounted: function() {
           const self = this;
           /* posts */
-          axios.get( 'https://lwbase.roughlang.com/ac/wp-json/wp/v2/posts')
+          axios.get( 'https://lwbase.roughlang.com/ac/wp-json/wp/v2/posts?page=1')
           .then(function(response) {
             // console.log(response.data);
             self.blog = response.data;
