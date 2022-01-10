@@ -69,7 +69,6 @@ category / tagのソートと検索
         el: '#blog',
         data: {
           blog: [],
-          
         },
         mounted: function() {
           const self = this;
