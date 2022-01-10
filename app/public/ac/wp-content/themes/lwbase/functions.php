@@ -11,7 +11,27 @@ add_action( 'after_setup_theme', 'twpp_setup_theme' );
  * - delete revisions
  */
 
- /* add icatch url */
+/**
+ * "date_format": "2022年01月10日 (月) 16:05",
+ */
+add_action( 'rest_api_init', 'api_add_date_format_fields' );
+function api_add_date_format_fields() {
+  register_rest_field( 'post',
+    'date_format',
+     array(
+      'get_callback'    => 'get_date_format',
+      'update_callback' => null,
+      'schema'          => null,
+    )
+  );
+}
+function get_date_format( $post, $name ) {
+	/* */
+  get_the_modified_date('Y年m月d日 H時i分s秒');
+  return get_the_modified_date('Y年m月d日 (D) H:i');
+}
+
+/* add icatch url */
 add_action( 'rest_api_init', 'api_add_fields' );
 function api_add_fields() {
   register_rest_field( 'post',
