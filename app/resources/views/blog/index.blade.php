@@ -13,15 +13,7 @@ category / tagのソートと検索
   <div class="row">
     <div class="col-md-9">
       
-      <h2 class="mb20" id="blog_top">Blog @{{message}}</h2>
-      <script>
-        var app = new Vue({
-          el: '#blog_top',
-          data: {
-            message: 'Hello Vue!'
-          }
-        })
-      </script>
+      <h2 class="mb20" id="blog_top">Blog list</h2>
       <div class="blog-search-form">
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -31,7 +23,7 @@ category / tagのソートと検索
         </form>
       </div>
 
-      <h3 class="mt30">Latest<h3>
+      <h3 class="mt30">Latest</h3>
       <div class="blog-latest-blocck">
         <ul id="blog" class="blog">
 
@@ -60,13 +52,13 @@ category / tagのソートと検索
         <nav aria-label="Page navigation example">
           <ul class="pagination justify-content-center pagination-sm">
             <li class="page-item disabled">
-              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">←</a>
             </li>
             <li class="page-item"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item">
-              <a class="page-link" href="#">Next</a>
+              <a class="page-link" href="#">→</a>
             </li>
           </ul>
         </nav>
@@ -76,7 +68,8 @@ category / tagのソートと検索
       const blog = new Vue({
         el: '#blog',
         data: {
-          blog: []
+          blog: [],
+          
         },
         mounted: function() {
           const self = this;
@@ -88,6 +81,9 @@ category / tagのソートと検索
           }).catch(function(){
             console.log('Failed to get blog from wp-rest-api.', error);
           });
+        },
+        method: function() {
+          alert();
         }
       });
       </script>

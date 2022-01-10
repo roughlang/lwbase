@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'vue')
+@section('title', 'vue list')
 
 @section('content_block')
 <div class="container lw-contents-block mt60 mb60">
@@ -10,6 +10,7 @@
       <ul>
         <li><a href="{{ env('APP_URL') }}/vue" target="_blank">{{ env('APP_URL') }}/vue</a></li>
         <li><a href="{{ env('APP_URL') }}/vue/ajax_get" target="_blank">{{ env('APP_URL') }}/vue/ajax_get</a></li>
+        <li><a href="{{ env('APP_URL') }}/vue/component" target="_blank">{{ env('APP_URL') }}/vue/component</a></li>
       </ul>
       <h2 class="mb20">Document</h2>
       <ul>  

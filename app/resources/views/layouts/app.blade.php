@@ -16,6 +16,7 @@
 	<script type="text/javascript" src="/assets/js/vue/vue.min.js"></script>
 	<script type="text/javascript" src="/assets/js/vue/axios.min.js"></script>
 	@endif
+	
 </head>
 <body>
 <div class="topbar"></div>

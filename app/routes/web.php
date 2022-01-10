@@ -41,6 +41,7 @@ Route::get('/test/vueajax', [App\Http\Controllers\VueajaxController::class, 'ind
  */
 Route::get('/vue', function () { return view('vue/index'); });
 Route::get('/vue/ajax_get', function () { return view('vue/ajax_get'); });
+Route::get('/vue/component', function () { return view('vue/component'); });
 
 Auth::routes();
 
