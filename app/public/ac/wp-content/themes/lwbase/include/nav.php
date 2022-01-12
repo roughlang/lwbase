@@ -18,8 +18,8 @@
             <li><a class="dropdown-item" href="<?php echo WP_HOME; ?>/gallery">Gallery</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link active" href="<?php echo WP_TOPURL; ?>/login">Log in</a></li>
-        <li class="nav-item"><a class="nav-link active" href="<?php echo WP_TOPURL; ?>/register">Register</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/login">Log in</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/register">Register</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
           <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
