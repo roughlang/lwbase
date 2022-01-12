@@ -32,6 +32,7 @@ app/public/ac/wp-content/debug.log
 
 # mac
 .DS_Store
+.vscode/
 
 # my private
 *_my*

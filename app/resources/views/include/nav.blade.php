@@ -12,10 +12,10 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-							<li><a class="dropdown-item" href="/blog">Top</a></li>
-							<li><a class="dropdown-item" href="/blog/archives">Archives</a></li>
+							<li><a class="dropdown-item" href="/ac">Top</a></li>
+							<li><a class="dropdown-item" href="/ac/archives">Archives</a></li>
 							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="/blog/gallery">Gallery</a></li>
+							<li><a class="dropdown-item" href="/ac/gallery">Gallery</a></li>
 						</ul>
 					</li>
 					@if (Route::has('login'))
