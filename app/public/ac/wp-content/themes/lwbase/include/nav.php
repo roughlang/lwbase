@@ -31,12 +31,14 @@
           </ul>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn" type="submit">
+
+      <form role="search" method="get" id="searchform" class="d-flex searchform" action="/ac/">
+        <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" value="" name="s" id="s">
+        <button class="btn" type="submit" id="searchsubmit" value="">
           <img src="/assets/img/item/search.svg" width="24" height="24" alt="search">
         </button>
       </form>
+
     </div>
   </div>
 </nav>
