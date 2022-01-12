@@ -1,8 +1,22 @@
 <?php
+/**
+ * アイキャッチ
+ */
 function twpp_setup_theme() {
     add_theme_support( 'post-thumbnails' );
 }
-add_action( 'after_setup_theme', 'twpp_setup_theme' );
+/**
+ * 
+ */
+function sidebar_widgets_init() {
+  register_sidebar( array(
+    'name' => 'Main Sidebar',
+    'id' => 'main-sidebar',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
+}
+add_action( 'widgets_init', 'sidebar_widgets_init' );
 
 /**
  * Wordpress rest api

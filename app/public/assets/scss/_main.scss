@@ -130,10 +130,12 @@ body {
 		.blog-search-form {
 			// background: #0ff;
 			form {
+				margin-right: 12px;
 				// background: #f00;
 				input {
 					// border: 3px solid #000;
 					border-radius: 3px 0 0 3px;
+					width: 250px;
 				}
 				input::placeholder {
 					color: #dcdcdc;
@@ -146,12 +148,227 @@ body {
 				}
 			}
 		}
+		.blog-latest-blocck {
+			/* api+vue */
+			.tab {
+				.tab-menu {
+					margin-left: -32px;
+					.tab-item {
+						list-style: none;
+						display: inline-block;
+						width: 33%;
+						margin-right: -8px;
+						border-left: 1px solid #a9a9a9;
+						border-top: 1px solid #a9a9a9;
+						border-bottom: 1px solid #a9a9a9;
+						padding: 9px 0px 0px 0px;
+						background: #f5f5f5;
+						h3 {
+							font-size: 21px;
+							text-align: center;
+							a:link, a:visited {
+								color: #868686;
+							}
+						}
+						.add-arrow {
+							display: none;
+						}
+					}
+					.tab-item:nth-child(1) {
+						border-radius: 3px 0 0 3px;
+					}
+					.tab-item:nth-child(3) {
+						border-radius: 0 3px 3px 0;
+						border-right: 1px solid #888;
+					}
+					.active {
+						background: #888;
+						color: #fff;
+						position: relative;
+						h3 {
+							font-size: 21px;
+							text-align: center;
+							a:link, a:visited {
+								color: #fff;
+							}
+						}
+						.add-arrow {
+							display: block !important;
+							position: absolute;
+							left: 45%;
+							right: 50%;
+							width: 20px;
+						}
+					}
+				}
+			}
+		}
+		/* api+vue */
 		.blog {
+			.breadcrumb {
+				ul {
+					margin-left: -12px;
+					li {
+						font-size: 13px;
+						display: inline-block;
+						margin-right: 18px;
+						a:link, a:visited {
+
+						}
+						a:active, a:hover {
+
+						}
+					}
+					li.parent:after {
+						content: " >";
+					}
+				}
+			}
+			h4 {
+				line-height: 35px;
+			}
 			li {
 				// background: #f0f;
 				font-size: 1rem;
 				list-style: none;
 				margin-left: -20px;
+			}
+			.tags {
+				// background: #ff0;
+				margin-bottom: -15px !important;
+				ul {
+					li {
+						display: inline-block;
+						margin-left: 8px;
+						a {
+							font-size: 11px;
+							border: 1px solid #888;
+							padding: 0px 10px;
+							background: #fff;
+							border-radius: 2px;
+							color: #666;
+							padding: 2px 10px;
+						}
+					}
+				}
+			}
+			.contents {
+				line-height: 26px;
+				h1,h2,h3 {
+					font-size: 24px;
+					color: #444;
+				}
+				h4 {
+					font-size: 23px;
+					color: #444;
+				}
+				h5,h6 {
+					font-size: 20px;
+					color: #444;
+				}
+				img {
+					margin-top: 20px;
+					@media (max-width: 575px) {
+						width: 100%;
+					}
+					@media (min-width: 576px) and (max-width: 768px) {
+						width: 100%;
+					}
+					@media (min-width: 769px) and (max-width: 992px) {
+						width: 100%;
+					}
+					@media (min-width: 993px) and (max-width: 1200px) {
+						width: 50%;
+						float:left;
+						margin-right: 20px;
+						margin-bottom: 5px;
+					}
+					@media (min-width: 1201px) {
+						width: 50%;
+						float:left;
+						margin-right: 20px;
+						margin-bottom: 5px;
+					}
+				}
+			}
+			.page-navi-arrow {
+				margin: 0 auto;
+				text-align: center;
+				font-size: 14px;
+			}
+			.blog-meta {
+				// background: #ff0;
+				ul.post-categories {
+					// background: #ff0;
+					margin-left: -14px;
+					margin-top: -14px;
+					li {
+						list-style: none;
+						display: inline-block;
+						margin-right: 24px;
+						font-size: 12px;
+						border: 1px solid #c1c1c1;
+						padding: 0px 10px;
+						background: #f5f5f5;
+						border-radius: 2px;
+						a:link, a:visited {
+							color: #555;
+						}
+					}
+					
+				}
+			}
+			/* Sidebar */
+			.menu {
+				li {
+					// background: #ff0;
+					list-style: none;
+					h3 {
+						font-size: 18px;
+					}
+					ul {
+						margin-bottom: 20px;
+						li {
+							font-size: 14px;
+							line-height: 23px;
+						}
+					}
+
+				}
+			}
+			nav.pagination {
+				
+				h2.screen-reader-text {
+					display: none;
+				}
+				.nav-links {
+					text-align:center;
+ 					margin:0 auto;
+					ul.page-numbers {
+						li {
+							display: inline-block;
+							margin-right: 13px;
+							// background: #c1c1c1;
+							border-left: 1px solid #808080;
+							border-top: 1px solid #808080;
+							border-bottom: 1px solid #808080;
+							width: 42px;
+							padding: 8px 0px;
+							span.current {
+								font-weight: 400;
+								color: #808080;
+								font-size: 16px;
+							}
+						}
+						li:first-child {
+							border-radius: 3px 0px 0px 3px;
+						}
+						li:last-child {
+							border-right: 1px solid #808080;
+							border-radius: 0px 3px 3px 0px;
+						}
+					}
+				}
 			}
 		}
 	}
