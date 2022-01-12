@@ -13,6 +13,7 @@
 						<a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
 							<li><a class="dropdown-item" href="/ac">Top</a></li>
+							<li><a class="dropdown-item" href="/ac/category">Category</a></li>
 							<li><a class="dropdown-item" href="/ac/archives">Archives</a></li>
 							<li><hr class="dropdown-divider"></li>
 							<li><a class="dropdown-item" href="/ac/gallery">Gallery</a></li>
