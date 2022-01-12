@@ -19,6 +19,21 @@ function sidebar_widgets_init() {
 add_action( 'widgets_init', 'sidebar_widgets_init' );
 
 /**
+ * 投稿記事の画像を取得
+ */
+function post_images() {
+  global $post, $posts;
+  ob_start();
+  ob_end_clean();
+  preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+  return $matches[1];
+}
+
+
+
+
+
+/**
  * Wordpress rest api
  * 
  * + add icatch url

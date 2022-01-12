@@ -46,30 +46,34 @@ include(__DIR__."/include/common.php");
 						<br clear="both">
 
 						<div class="thubnail mt50 mb80">
-							photo thumbnail
-							<?php
-							/**
-							 * 
-							 */
-							$id = get_the_ID();
-							echo $id."<br>\n";
-							$attachments = get_children(array(
-								'post_parent'    => $id, // この投稿のID
-								'post_status'    => 'inherit', // 公開ステータス(post_parentに準じる)
-								'post_type'      => 'attachment', //投稿タイプ(添付ファイル)
-								'post_mime_type' => 'image', // MIMEタイプ(画像)
-								'orderby'        => 'menu_order', // ソート(任意)
-								'order'          => 'ASC' // 並び順(昇順)
-							));
-							// var_dump($attachments);
-							foreach ($attachments as $key=>$item) {
-								echo $key."<br>\n";
-								// var_dump($item->ID);
-								// var_dump($item->guid);
-								echo "<img src='".$item->guid."' style='width: 100px;'>";
-
-							}
+							<?php 
+								$post_images = post_images();
+								$n = 0;
+								foreach($post_images as $image_url) {
+									echo <<<EOM
+<span class="post-image">
+	<a href="#" data-bs-toggle="modal" data-bs-target="#modalid_{$n}" class="modal-link">
+		<img src="{$image_url}" alt="post-images_{$n}" class="modal-image post-image-img">
+	</a>
+</span>
+<div class="modal fade" id="modalid_{$n}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="{$image_url}" width="100%" alt="post-image_{$n}">
+      </div>
+    </div>
+  </div>
+</div>
+EOM;
+									$n++;
+								}
 							?>
+								<!-- <img src="<?php echo $img; ?>" alt="<?php the_title(); ?>" style="width: 100px;"> -->
+							
 						</div>
 
 						<div class="blog-meta mb30 mt50">
