@@ -30,7 +30,18 @@ include(__DIR__."/include/common.php");
 						$content = get_the_content();
 						$content = adjust_content_text($content);
 						$content = mb_substr($content,0,200);
-						echo "<p>".$content."..."."</p>";
+						echo "<p class='top-content'>";
+						
+						// if (!empty(the_post_thumbnail_url())) {
+						// 	echo "<img src='".the_post_thumbnail_url()."' class='blog-icatch'>";
+						// }
+						$thumbnail = get_the_post_thumbnail_url();
+						if (empty(get_the_post_thumbnail_url())) {
+							// nothing
+						} else {
+							echo "<img src='".$thumbnail."' class='blog-icatch'>";
+						}
+						echo $content."..."."</p>";
 						?>
 						<div class="blog-meta mb30">
 							
