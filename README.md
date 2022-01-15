@@ -55,7 +55,7 @@ $ cp -p .env.example .env
 Change docker port when at this timing, if you want.
 app/docker-compose.yml
 ```
-- '${APP_PORT:-6265}:80'
+- '${APP_PORT:-8000}:80'
 ↓
 - '${APP_PORT:-6265}:80'
 ```
