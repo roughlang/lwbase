@@ -52,7 +52,14 @@ set `.env`
 ```
 $ cp -p .env.example .env
 ```
-exec docker
+Change docker port when at this timing, if you want.
+app/docker-compose.yml
+```
+- '${APP_PORT:-6265}:80'
+↓
+- '${APP_PORT:-6265}:80'
+```
+Exec docker
 ```
 $ ./vendor/bin/sail build --no-cache  
 $ ./vendor/bin/sail up -d
@@ -60,6 +67,7 @@ $ docker-compose down && docker-compose up -d
 $ docker-compose ps
 ```
 access: http://localhost:8000
+or at your settings port.
 
 
 ## Create databse and connect
